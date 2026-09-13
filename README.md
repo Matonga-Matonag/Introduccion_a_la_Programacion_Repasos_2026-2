@@ -196,7 +196,7 @@ Permite mostrar datos en la pantalla (salida estándar).
 ```python
 print("Hola mundo")          # Hola mundo
 print(2 + 5)                 # 7
-print("2 + 5 =", 2 + 5)     # 2 + 5 = 7
+print("2 + 5 =", 2 + 5)      # 2 + 5 = 7
 ```
 
 ### F-strings (cadenas formateadas)
