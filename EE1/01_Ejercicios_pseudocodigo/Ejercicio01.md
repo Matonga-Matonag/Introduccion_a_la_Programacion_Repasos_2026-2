@@ -36,33 +36,33 @@ Hay dos niveles de decisión:
 ### Paso 3 — Escribir el pseudocódigo
 
 ```
-Inicio
-    Leer tipo_vehiculo
-    Leer hora
+INICIO
+    LEER tipo_vehiculo
+    LEER hora
 
-    Si hora < 6 o hora >= 22:
+    SI hora < 6 o hora >= 22:
         es_nocturno = Verdadero
-    Si no:
+    SINO:
         es_nocturno = Falso
 
-    Si tipo_vehiculo == 1 y es_nocturno == Verdadero:
+    SI tipo_vehiculo == 1 y es_nocturno == Verdadero:
         tarifa = 1.00
-    Si no, si tipo_vehiculo == 1:
+    SINO SI tipo_vehiculo == 1:
         tarifa = 2.00
-    Si no, si tipo_vehiculo == 2 y es_nocturno == Verdadero:
+    SINO SI tipo_vehiculo == 2 y es_nocturno == Verdadero:
         tarifa = 3.00
-    Si no, si tipo_vehiculo == 2:
+    SINO SI tipo_vehiculo == 2:
         tarifa = 5.00
-    Si no, si tipo_vehiculo == 3 y es_nocturno == Verdadero:
+    SINO SI tipo_vehiculo == 3 y es_nocturno == Verdadero:
         tarifa = 8.00
-    Si no, si tipo_vehiculo == 3:
+    SINO SI si tipo_vehiculo == 3:
         tarifa = 12.00
-    Si no:
-        Mostrar "Tipo de vehículo no reconocido"
-        Fin
+    SINO:
+        MOSTRAR "Tipo de vehículo no reconocido"
+        FIN
 
-    Mostrar "La tarifa a pagar es S/.", tarifa
-Fin
+    MOSTRAR "La tarifa a pagar es S/.", tarifa
+FIN
 ```
 
 ### Paso 4 — Verificar con un ejemplo
