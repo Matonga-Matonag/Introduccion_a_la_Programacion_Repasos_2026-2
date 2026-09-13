@@ -1,6 +1,6 @@
 # Repaso: Introducción a la Programación con Python
 
-> Material de repaso para el primer examen del curso.
+> Hola, soy Matías, el asistente del profe en el curso. Les preparé un material de repaso para el primer examen del curso. Espero que les sirva mucho para estudiar. ¡Éxitos!
 
 ---
 
