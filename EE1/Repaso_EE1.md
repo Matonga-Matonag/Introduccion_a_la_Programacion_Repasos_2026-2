@@ -17,7 +17,6 @@
 9. [Operadores de comparación](#9-operadores-de-comparación)
 10. [Estructuras selectivas](#10-estructuras-selectivas)
 11. [Operadores lógicos](#11-operadores-lógicos)
-12. [Recursos adicionales](#12-recursos-adicionales)
 
 ---
 
