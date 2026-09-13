@@ -1,6 +1,6 @@
-# Repaso: Introducción a la Programación con Python
+# Repaso EE1 - Introducción a la Programación
 
-> Hola, soy Matías, el Asistente de Cátedra (ayudante del profe) del curso. Les preparé un material de repaso para el primer examen del curso. Espero que les sirva mucho para estudiar. ¡Éxitos!
+> Hola, soy Matías, el Asistente de Cátedra (ayudante del profe) del curso. Les preparé un material de repaso para el primer examen del curso. Espero que les sirva mucho para estudiar. ¡Éxitos! 🔥🚀
 
 ---
 
