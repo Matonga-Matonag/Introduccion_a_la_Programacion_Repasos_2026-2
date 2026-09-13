@@ -1,6 +1,6 @@
 # Repaso: Introducción a la Programación con Python
 
-> Material de repaso para el primer examen del curso. Basado en los contenidos vistos en clase durante las semanas 1, 2 y 3.
+> Material de repaso para el primer examen del curso.
 
 ---
 
@@ -14,12 +14,10 @@
 6. [La función `print()`](#6-la-función-print)
 7. [La función `input()`](#7-la-función-input)
 8. [Operaciones con números](#8-operaciones-con-números)
-9. [Trabajando con Strings](#9-trabajando-con-strings)
-10. [Funciones](#10-funciones)
-11. [Operadores de comparación](#11-operadores-de-comparación)
-12. [Estructuras selectivas](#12-estructuras-selectivas)
-13. [Operadores lógicos](#13-operadores-lógicos)
-14. [Recursos adicionales](#14-recursos-adicionales)
+9. [Operadores de comparación](#11-operadores-de-comparación)
+10. [Estructuras selectivas](#12-estructuras-selectivas)
+11. [Operadores lógicos](#13-operadores-lógicos)
+12. [Recursos adicionales](#14-recursos-adicionales)
 
 ---
 
@@ -45,7 +43,8 @@ main()
 - Todo el código del programa va **dentro** de `main()`, respetando la indentación.
 - **`main()`** al final es la llamada que ejecuta el programa.
 
-> 💡 **Indentación:** El cuerpo de cualquier estructura (funciones, condicionales) debe estar sangrado (indentado) con espacios o tabulaciones respecto al nivel anterior. Python usa la indentación para delimitar bloques de código.
+> ➡ **Indentación:** El cuerpo de cualquier estructura en Python (funciones, condicionales) debe estar indentado con espacios o tabulaciones respecto al nivel anterior. Python usa la indentación para delimitar bloques de código.
+> 💡 **Nota para el EE1:** Si bien no es obligatorio que utilicen la estructura `def main():` para este examen, les recomiendo que se acostumbren a utilizarla para el resto del curso.
 
 ---
 
@@ -99,12 +98,12 @@ Las estructuras selectivas también se representan en pseudocódigo:
 
 ```
 Inicio
-    Leer celsius
-    Si celsius <= 17:
+    LEER celsius
+    SI celsius <= 17:
         Mostrar "Es un día frío"
-    Si no, si celsius <= 25:
+    SINO SI celsius <= 25:
         Mostrar "Es un día caluroso"
-    Si no:
+    SINO:
         Mostrar "Está quemando"
 Fin
 ```
@@ -113,7 +112,7 @@ Fin
 
 ## 4. Variables
 
-Una variable es un espacio en memoria donde se almacena un dato. Para declarar una variable en Python, se escribe el nombre, el operador de asignación (`=`) y el valor.
+Una variable es un espacio en memoria donde se almacena un dato. Para declarar una variable en Python, se escribe el nombre (a la izquierda), el operador de asignación (`=`) y el valor (a la derecha).
 
 ```python
 nombre = 'Ana'
@@ -261,117 +260,9 @@ precio *= 2     # equivale a: precio = precio * 2      → 200
 precio /= 4     # equivale a: precio = precio / 4      → 50.0
 ```
 
-### Funciones matemáticas útiles
-
-```python
-round(3.7)      # 4   → redondea al entero más cercano
-abs(-13)        # 13  → valor absoluto
-```
-
 ---
 
-## 9. Trabajando con Strings
-
-### Concatenación
-
-```python
-nombre = 'Ana'
-print("Hola, " + nombre + "!")    # Hola, Ana!
-```
-
-### Acceso a caracteres
-
-Los caracteres de un string se acceden por su índice (posición), empezando desde `0`.
-
-```python
-saludo = "Hola"
-print(saludo[0])   # H
-print(saludo[3])   # a
-print(saludo[-1])  # a  (el último)
-```
-
-### Longitud de un string
-
-```python
-nombre = "Ana"
-print(len(nombre))  # 3
-```
-
-### Métodos comunes de strings
-
-```python
-texto = "  Hola Mundo  "
-
-texto.upper()        # "  HOLA MUNDO  "  → convierte a mayúsculas
-texto.lower()        # "  hola mundo  "  → convierte a minúsculas
-texto.strip()        # "Hola Mundo"      → elimina espacios al inicio y al final
-
-saludo = "Hola Mundo"
-saludo.replace("Mundo", "Peru")  # "Hola Peru"
-```
-
-### El operador `in`
-
-Permite verificar si un texto o carácter existe dentro de un string. Devuelve `True` o `False`.
-
-```python
-frase = "Hola Mundo"
-print("Hola" in frase)   # True
-print("hola" in frase)   # False  (es sensible a mayúsculas)
-```
-
----
-
-## 10. Funciones
-
-Una función es un bloque de código reutilizable que puede recibir datos de entrada (parámetros) y devolver un resultado.
-
-```python
-def nombre_funcion(parametro1, parametro2):
-    # cuerpo de la función
-    return resultado
-```
-
-### Definición y llamada
-
-```python
-def calcular_suma(num1, num2):
-    return num1 + num2
-
-resultado = calcular_suma(3, 4)
-print(resultado)  # 7
-```
-
-### Valores por defecto
-
-Se pueden asignar valores predeterminados a los parámetros.
-
-```python
-def saludar(nombre, saludo="Hola"):
-    print(f"{saludo}, {nombre}!")
-
-saludar("Ana")           # Hola, Ana!
-saludar("Luis", "Hey")   # Hey, Luis!
-```
-
-### Alcance (scope)
-
-- **Alcance local:** una variable definida dentro de una función solo existe dentro de ella.
-- **Alcance global:** una variable definida fuera de todas las funciones puede usarse en cualquier parte del programa.
-
-```python
-igv = 0.18  # variable global
-
-def calcular_total(subtotal):
-    total = subtotal + (subtotal * igv)  # 'total' es local
-    return total
-
-print(calcular_total(100))  # 118.0
-```
-
----
-
-## 11. Operadores de comparación
+## 9. Operadores de comparación
 
 Las comparaciones evalúan una condición y devuelven `True` o `False`.
 
@@ -384,9 +275,11 @@ Las comparaciones evalúan una condición y devuelven `True` o `False`.
 | `>=` | Mayor o igual que | `3 >= 3` | `True` |
 | `<=` | Menor o igual que | `2 <= 1` | `False` |
 
+> 💡 **Nota:** No confundir el uso de `=` (asignación) con `==` (comparación). El primero se utiliza para asignarle un valor a una variable, mientras que el segundo para comparar dos valores (retornando `True` si son iguales y `False` si son distintos).
+
 ---
 
-## 12. Estructuras selectivas
+## 10. Estructuras selectivas
 
 Las estructuras selectivas permiten que el programa tome decisiones y siga distintos caminos de ejecución según el cumplimiento de condiciones.
 
@@ -461,28 +354,33 @@ def main():
 main()
 ```
 
-> ⚠️ **`if` anidado vs `elif`:** anidar múltiples `if` dentro de otros `if` funciona pero dificulta la lectura del código. Cuando las condiciones son mutuamente excluyentes, `elif` es la alternativa más clara y eficiente.
-
-### Valores truthy y falsy
-
-En Python, todo valor tiene un sentido booleano implícito. Algunos valores se consideran **falsy** (equivalen a `False`) y el resto son **truthy** (equivalen a `True`).
-
-Valores **falsy**:
-- `False`
-- `0` y `0.0`
-- `""` (string vacío)
-- `None`
+> ⚠️ Cuidado con encadenar `if` tras `if`: si escribes varios `if` seguidos (en lugar de `elif`), Python evaluará todos sin excepción, aunque ya haya encontrado una condición verdadera. Esto puede producir resultados inesperados cuando las condiciones no son mutuamente excluyentes.
 
 ```python
-print(bool(0))      # False
-print(bool(""))     # False
-print(bool(5))      # True
-print(bool("Hola")) # True
+# ❌ Usando if tras if — se evalúan los tres
+nota = 15
+if nota >= 11:
+    print("Aprobado")
+if nota >= 13:
+    print("Notable")
+if nota >= 16:
+    print("Excelente")
+# Imprime "Aprobado" y "Notable" a la vez
+
+# ✅ Usando elif — solo se ejecuta el primero que sea verdadero
+nota = 15
+if nota >= 16:
+    print("Excelente")
+elif nota >= 13:
+    print("Notable")
+elif nota >= 11:
+    print("Aprobado")
+# Imprime únicamente "Notable"
 ```
 
 ---
 
-## 13. Operadores lógicos
+## 11. Operadores lógicos
 
 Permiten combinar múltiples condiciones para crear lógica de decisión más compleja.
 
@@ -532,15 +430,17 @@ if not es_admin:
 
 ---
 
-## 14. Recursos adicionales
+## 12. Recursos adicionales
 
-Para profundizar más en Python y continuar practicando, se recomienda el curso gratuito de Python de **freeCodeCamp**:
+Para profundizar más en Python y continuar practicando, les recomiendo el curso gratuito de Python de **freeCodeCamp**. Yo lo llevé antes de llevar Introducción a la Programación (y por si acaso veinteé 😉). Les servirá para profundizar más allá de lo que verán en el curso de la universidad, además de que al completarlo tendrán una certificación gratuita. Les dejaré a continuación los links tanto al curso como a la plataforma de **freeCodeCamp**, donde podrán aprender muchas cosas más sobre programación y desarrollo de software:
 
 - 🐍 **Curso de Python (freeCodeCamp):** https://www.freecodecamp.org/learn/scientific-computing-with-python/
 - 🌐 **freeCodeCamp (más cursos gratuitos):** https://www.freecodecamp.org/
 
-freeCodeCamp ofrece cursos completamente gratuitos y en línea sobre programación, desarrollo web, ciencia de datos y mucho más, con certificaciones incluidas.
+**freeCodeCamp** ofrece cursos completamente gratuitos y en línea sobre programación, desarrollo web, ciencia de datos y mucho más, con certificaciones incluidas.
 
 ---
 
-> Elaborado como material de repaso para el curso de Introducción a la Programación · Universidad de Lima · Ciclo 2026-2
+> Muchos éxitos a todos y todas en su examen. ¡Confién en ustedes! 🦾
+
+> Elaborado como material de repaso para el curso de Introducción a la Programación · Matías Gonzalo Villar Córdova Alva
