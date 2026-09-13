@@ -44,6 +44,7 @@ main()
 - **`main()`** al final es la llamada que ejecuta el programa.
 
 > ➡ **Indentación:** El cuerpo de cualquier estructura en Python (funciones, condicionales) debe estar indentado con espacios o tabulaciones respecto al nivel anterior. Python usa la indentación para delimitar bloques de código.
+
 > 💡 **Nota para el EE1:** Si bien no es obligatorio que utilicen la estructura `def main():` para este examen, les recomiendo que se acostumbren a utilizarla para el resto del curso.
 
 ---
