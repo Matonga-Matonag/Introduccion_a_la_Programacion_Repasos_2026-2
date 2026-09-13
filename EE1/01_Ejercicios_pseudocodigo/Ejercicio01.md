@@ -88,4 +88,4 @@ Si el usuario ingresa `tipo_vehiculo = 5`:
 > 💡 **Puntos clave de este ejercicio:**
 > - Uso de `o` (`or`) para combinar dos condiciones en la detección del horario nocturno.
 > - Uso de `y` (`and`) para combinar el tipo de vehículo con la condición de horario.
-> - Uso del caso `Si no` final como mecanismo de validación de entrada.
+> - Uso del caso `SINO` final como mecanismo de validación de entrada.
