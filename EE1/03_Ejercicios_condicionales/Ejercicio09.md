@@ -132,14 +132,14 @@ Si se hubiera escrito:
 
 ```python
 if (anio % 4 == 0 and anio % 100 != 0) or (anio % 400 == 0):
-    print("ES bisiesto")
+    print("ES un año bisiesto")
 elif anio % 100 == 0:
-    print("ES de siglo")
+    print("ES un año de siglo")
 elif anio % 1000 == 0:
-    print("ES de milenio")
+    print("ES un año de milenio")
 ```
 
-Para el año 2000, solo se mostraría `"ES bisiesto"` y las otras dos clasificaciones nunca se evaluarían. Las condiciones no son excluyentes, por lo que cada una merece su propio `if`.
+Para el año 2000, solo se mostraría `"ES un año bisiesto"` y las otras dos clasificaciones nunca se evaluarían. Las condiciones no son excluyentes, por lo que cada una merece su propio `if`.
 
 ---
 
