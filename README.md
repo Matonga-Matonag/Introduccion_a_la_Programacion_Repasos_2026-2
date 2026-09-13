@@ -79,10 +79,9 @@ Un **algoritmo** es una secuencia de instrucciones que representan la solución 
 
 ### Ejemplo: calcular el precio de una manzana
 
-**Problema:** calcular el precio de una manzana dado el precio por kilo (K) y el peso en gramos (P).
-
-**Entradas:** K (precio en soles del kilo), P (peso en gramos de la manzana)  
-**Salida:** M (precio en soles de una manzana)
+* **Problema:** calcular el precio de una manzana dado el precio por kilo (K) y el peso en gramos (P).
+* **Entradas:** K (precio en soles del kilo), P (peso en gramos de la manzana)  
+* **Salida:** M (precio en soles de una manzana)
 
 ```
 Inicio
