@@ -12,8 +12,6 @@ Este repositorio tiene como propósito:
 - Compartirles ejercicios para practicar.
 - Brindarles un apoyo extra para estudiar para los exámenes.
 
----
-
 ## Recursos adicionales
 
 Para profundizar más en Python y continuar practicando por su cuenta, les recomiendo el curso gratuito de Python de **freeCodeCamp**. Yo lo llevé antes de llevar Introducción a la Programación (y por si acaso veinteé 😉). Les servirá para profundizar más allá de lo que verán en el curso de la universidad, además de que al completarlo tendrán una certificación gratuita. Por si gustan tomarlo, les dejaré a continuación los links tanto al curso como a la plataforma de **freeCodeCamp**, donde podrán aprender muchas cosas más sobre programación y desarrollo de software:
@@ -22,7 +20,5 @@ Para profundizar más en Python y continuar practicando por su cuenta, les recom
 - 🌐 **freeCodeCamp (más cursos gratuitos):** https://www.freecodecamp.org/
 
 **freeCodeCamp** ofrece cursos completamente gratuitos y en línea sobre programación, desarrollo web, ciencia de datos y mucho más, con certificaciones incluidas.
-
----
 
 > Elaborado como material de repaso y estudio para el curso de Introducción a la Programación · Matías Gonzalo Villar Córdova Alva
