@@ -1,0 +1,546 @@
+# Repaso: Introducción a la Programación con Python
+
+> Material de repaso para el primer examen del curso. Basado en los contenidos vistos en clase durante las semanas 1, 2 y 3.
+
+---
+
+## Tabla de contenidos
+
+1. [¿Qué es Python?](#1-qué-es-python)
+2. [Estructura base de un programa](#2-estructura-base-de-un-programa)
+3. [Pseudocódigo](#3-pseudocódigo)
+4. [Variables](#4-variables)
+5. [Tipos de datos comunes](#5-tipos-de-datos-comunes)
+6. [La función `print()`](#6-la-función-print)
+7. [La función `input()`](#7-la-función-input)
+8. [Operaciones con números](#8-operaciones-con-números)
+9. [Trabajando con Strings](#9-trabajando-con-strings)
+10. [Funciones](#10-funciones)
+11. [Operadores de comparación](#11-operadores-de-comparación)
+12. [Estructuras selectivas](#12-estructuras-selectivas)
+13. [Operadores lógicos](#13-operadores-lógicos)
+14. [Recursos adicionales](#14-recursos-adicionales)
+
+---
+
+## 1. ¿Qué es Python?
+
+Python es un lenguaje de programación de propósito general conocido por su simplicidad y facilidad de uso. Se utiliza en muchas áreas como ciencia de datos, desarrollo web, automatización, entre otras.
+
+---
+
+## 2. Estructura base de un programa
+
+Todo programa en Python debe guardarse en un archivo con extensión `.py` y seguir esta estructura base:
+
+```python
+def main():
+    # Código a implementar...
+    pass
+
+main()
+```
+
+- **`def main():`** define la función principal del programa.
+- Todo el código del programa va **dentro** de `main()`, respetando la indentación.
+- **`main()`** al final es la llamada que ejecuta el programa.
+
+> 💡 **Indentación:** El cuerpo de cualquier estructura (funciones, condicionales) debe estar sangrado (indentado) con espacios o tabulaciones respecto al nivel anterior. Python usa la indentación para delimitar bloques de código.
+
+---
+
+## 3. Pseudocódigo
+
+El pseudocódigo es una forma de representar un algoritmo usando lenguaje natural con palabras imperativas. No tiene una sintaxis obligatoria estricta, pero debe ser claro, ordenado y fácil de traducir a código.
+
+Un **algoritmo** es una secuencia de instrucciones que representan la solución a un problema, las cuales deben ejecutarse en el orden indicado. Todo algoritmo debe ser:
+
+- **Preciso:** cada paso claramente especificado, sin ambigüedad.
+- **Definido:** con las mismas entradas, siempre produce el mismo resultado.
+- **Finito:** termina después de un número determinado de pasos.
+- **Produce un resultado:** toda ejecución entrega una salida.
+
+### Elementos de un algoritmo
+
+| Elemento | Descripción | Pregunta clave |
+|---|---|---|
+| **Entrada** | Datos necesarios para ejecutar los pasos | ¿Qué necesita el algoritmo para funcionar? |
+| **Proceso** | Pasos que transforman la entrada en la salida | ¿Qué operaciones se realizan? |
+| **Salida** | Resultado obtenido al final | ¿Qué entrega el algoritmo? |
+
+### Cómo construir un algoritmo
+
+1. Definir el problema a resolver
+2. Identificar las **entradas** del algoritmo
+3. Identificar la **salida** del algoritmo
+4. Definir los **pasos** para convertir las entradas en la salida
+5. Seguir los pasos y comprobar que el algoritmo sea correcto
+6. Revisar y hacer correcciones si es necesario
+
+### Ejemplo: calcular el precio de una manzana
+
+**Problema:** calcular el precio de una manzana dado el precio por kilo (K) y el peso en gramos (P).
+
+**Entradas:** K (precio en soles del kilo), P (peso en gramos de la manzana)  
+**Salida:** M (precio en soles de una manzana)
+
+```
+Inicio
+    Ingresar valor de K y P
+    Calcular G = K / 1000       (precio por gramo)
+    Calcular M = G x P          (precio de la manzana)
+    Mostrar el valor de M
+Fin
+```
+
+### Pseudocódigo con condicionales
+
+Las estructuras selectivas también se representan en pseudocódigo:
+
+```
+Inicio
+    Leer celsius
+    Si celsius <= 17:
+        Mostrar "Es un día frío"
+    Si no, si celsius <= 25:
+        Mostrar "Es un día caluroso"
+    Si no:
+        Mostrar "Está quemando"
+Fin
+```
+
+---
+
+## 4. Variables
+
+Una variable es un espacio en memoria donde se almacena un dato. Para declarar una variable en Python, se escribe el nombre, el operador de asignación (`=`) y el valor.
+
+```python
+nombre = 'Ana'
+edad = 20
+altura = 1.65
+```
+
+### Reglas para nombres de variables
+
+- Solo pueden comenzar con una **letra** o **guion bajo** (`_`), nunca con un número.
+- Solo pueden contener caracteres alfanuméricos (`a-z`, `A-Z`, `0-9`) y guiones bajos.
+- Son **sensibles a mayúsculas y minúsculas**: `edad`, `Edad` y `EDAD` son variables distintas.
+- No pueden ser palabras reservadas de Python (`if`, `else`, `def`, `while`, etc.).
+- Las variables con múltiples palabras se separan con guion bajo: `nombre_completo` (estilo *snake_case*).
+
+---
+
+## 5. Tipos de datos comunes
+
+Python es un lenguaje **dinámicamente tipado**: el tipo de dato de una variable se determina a partir del valor que se le asigna, no hay que declararlo.
+
+### Entero (`int`)
+
+Número entero sin decimales.
+
+```python
+edad = 20
+print(edad)  # 20
+```
+
+### Flotante (`float`)
+
+Número con decimales.
+
+```python
+precio = 4.50
+print(precio)  # 4.5
+```
+
+### Cadena de texto (`str`)
+
+Secuencia de caracteres entre comillas simples o dobles.
+
+```python
+nombre = 'Ana'
+ciudad = "Lima"
+```
+
+### Booleano (`bool`)
+
+Valor que representa verdadero o falso.
+
+```python
+aprobado = True
+desaprobado = False
+```
+
+### Conversión entre tipos
+
+Es muy común necesitar convertir el tipo de un dato, especialmente al leer datos del usuario con `input()` (que siempre devuelve un `str`).
+
+```python
+# Convertir a entero
+edad = int("20")       # 20
+edad = int(20.9)       # 20 (trunca los decimales)
+
+# Convertir a flotante
+precio = float("4.5")  # 4.5
+precio = float(20)     # 20.0
+
+# Convertir a texto
+texto = str(100)       # "100"
+```
+
+---
+
+## 6. La función `print()`
+
+Permite mostrar datos en la pantalla (salida estándar).
+
+```python
+print("Hola mundo")          # Hola mundo
+print(2 + 5)                 # 7
+print("2 + 5 =", 2 + 5)     # 2 + 5 = 7
+```
+
+### F-strings (cadenas formateadas)
+
+Permiten insertar variables dentro de un texto de forma clara y compacta.
+
+```python
+nombre = 'Ana'
+edad = 20
+print(f"Me llamo {nombre} y tengo {edad} años.")
+# Me llamo Ana y tengo 20 años.
+```
+
+---
+
+## 7. La función `input()`
+
+Permite solicitar datos al usuario. **Siempre devuelve un `str`**, por lo que si se necesita un número hay que convertirlo.
+
+```python
+nombre = input("¿Cuál es tu nombre? ")
+print("Hola,", nombre)
+```
+
+```python
+# Leer un número entero
+edad = int(input("¿Cuántos años tienes? "))
+
+# Leer un número flotante
+altura = float(input("¿Cuánto mides (en metros)? "))
+```
+
+---
+
+## 8. Operaciones con números
+
+### Operaciones básicas
+
+| Operación | Operador | Ejemplo | Resultado |
+|---|---|---|---|
+| Suma | `+` | `5 + 3` | `8` |
+| Resta | `-` | `5 - 3` | `2` |
+| Multiplicación | `*` | `5 * 3` | `15` |
+| División | `/` | `5 / 2` | `2.5` |
+| División entera | `//` | `5 // 2` | `2` |
+| Módulo (resto) | `%` | `5 % 2` | `1` |
+| Potencia | `**` | `2 ** 3` | `8` |
+
+> ⚠️ Al dividir con `/`, el resultado **siempre es `float`**, aunque la división sea exacta (`4 / 2` devuelve `2.0`).
+
+### Asignaciones aumentadas
+
+Permiten actualizar el valor de una variable combinando operación y asignación en un solo paso.
+
+```python
+contador = 0
+contador += 1   # equivale a: contador = contador + 1  → 1
+contador -= 1   # equivale a: contador = contador - 1  → 0
+precio = 100
+precio *= 2     # equivale a: precio = precio * 2      → 200
+precio /= 4     # equivale a: precio = precio / 4      → 50.0
+```
+
+### Funciones matemáticas útiles
+
+```python
+round(3.7)      # 4   → redondea al entero más cercano
+abs(-13)        # 13  → valor absoluto
+```
+
+---
+
+## 9. Trabajando con Strings
+
+### Concatenación
+
+```python
+nombre = 'Ana'
+print("Hola, " + nombre + "!")    # Hola, Ana!
+```
+
+### Acceso a caracteres
+
+Los caracteres de un string se acceden por su índice (posición), empezando desde `0`.
+
+```python
+saludo = "Hola"
+print(saludo[0])   # H
+print(saludo[3])   # a
+print(saludo[-1])  # a  (el último)
+```
+
+### Longitud de un string
+
+```python
+nombre = "Ana"
+print(len(nombre))  # 3
+```
+
+### Métodos comunes de strings
+
+```python
+texto = "  Hola Mundo  "
+
+texto.upper()        # "  HOLA MUNDO  "  → convierte a mayúsculas
+texto.lower()        # "  hola mundo  "  → convierte a minúsculas
+texto.strip()        # "Hola Mundo"      → elimina espacios al inicio y al final
+
+saludo = "Hola Mundo"
+saludo.replace("Mundo", "Peru")  # "Hola Peru"
+```
+
+### El operador `in`
+
+Permite verificar si un texto o carácter existe dentro de un string. Devuelve `True` o `False`.
+
+```python
+frase = "Hola Mundo"
+print("Hola" in frase)   # True
+print("hola" in frase)   # False  (es sensible a mayúsculas)
+```
+
+---
+
+## 10. Funciones
+
+Una función es un bloque de código reutilizable que puede recibir datos de entrada (parámetros) y devolver un resultado.
+
+```python
+def nombre_funcion(parametro1, parametro2):
+    # cuerpo de la función
+    return resultado
+```
+
+### Definición y llamada
+
+```python
+def calcular_suma(num1, num2):
+    return num1 + num2
+
+resultado = calcular_suma(3, 4)
+print(resultado)  # 7
+```
+
+### Valores por defecto
+
+Se pueden asignar valores predeterminados a los parámetros.
+
+```python
+def saludar(nombre, saludo="Hola"):
+    print(f"{saludo}, {nombre}!")
+
+saludar("Ana")           # Hola, Ana!
+saludar("Luis", "Hey")   # Hey, Luis!
+```
+
+### Alcance (scope)
+
+- **Alcance local:** una variable definida dentro de una función solo existe dentro de ella.
+- **Alcance global:** una variable definida fuera de todas las funciones puede usarse en cualquier parte del programa.
+
+```python
+igv = 0.18  # variable global
+
+def calcular_total(subtotal):
+    total = subtotal + (subtotal * igv)  # 'total' es local
+    return total
+
+print(calcular_total(100))  # 118.0
+```
+
+---
+
+## 11. Operadores de comparación
+
+Las comparaciones evalúan una condición y devuelven `True` o `False`.
+
+| Operador Python | Significado matemático | Ejemplo | Resultado |
+|---|---|---|---|
+| `==` | Igual a | `3 == 3` | `True` |
+| `!=` | Distinto de | `3 != 4` | `True` |
+| `>` | Mayor que | `5 > 3` | `True` |
+| `<` | Menor que | `2 < 1` | `False` |
+| `>=` | Mayor o igual que | `3 >= 3` | `True` |
+| `<=` | Menor o igual que | `2 <= 1` | `False` |
+
+---
+
+## 12. Estructuras selectivas
+
+Las estructuras selectivas permiten que el programa tome decisiones y siga distintos caminos de ejecución según el cumplimiento de condiciones.
+
+### Estructura `if` (una sola vía)
+
+Ejecuta el bloque solo si la condición es verdadera.
+
+```python
+if <condicion>:
+    <sentencias>
+```
+
+```python
+def main():
+    celsius = float(input("Ingrese temperatura en Celsius: "))
+    if celsius <= 17:
+        print("Es un día frío")
+
+main()
+```
+
+### Estructura `if / else` (dos vías)
+
+Si la condición es verdadera se ejecuta el bloque del `if`; si es falsa, el del `else`. Son mutuamente excluyentes: siempre se ejecuta exactamente uno de los dos.
+
+```python
+if <condicion>:
+    <sentencias>
+else:
+    <sentencias>
+```
+
+```python
+def main():
+    celsius = float(input("Ingrese temperatura en Celsius: "))
+    if celsius <= 17:
+        print("Es un día frío")
+    else:
+        print("Es un día caluroso")
+
+main()
+```
+
+### Estructura `if / elif / else` (múltiples vías)
+
+Permite encadenar varias condiciones. Python las evalúa en orden y ejecuta el bloque de la **primera** condición verdadera, ignorando el resto. El `else` final es opcional y actúa como caso por defecto.
+
+```python
+if <condicion1>:
+    <sentencias>
+elif <condicion2>:
+    <sentencias>
+elif <condicion3>:
+    <sentencias>
+...
+else:
+    <sentencias por defecto>
+```
+
+```python
+def main():
+    celsius = float(input("Ingrese temperatura en Celsius: "))
+    if celsius > 25:
+        print("Está quemando")
+    elif celsius > 17:
+        print("Es un día caluroso")
+    elif celsius > 0:
+        print("Es un día frío")
+    else:
+        print("Está helando")
+
+main()
+```
+
+> ⚠️ **`if` anidado vs `elif`:** anidar múltiples `if` dentro de otros `if` funciona pero dificulta la lectura del código. Cuando las condiciones son mutuamente excluyentes, `elif` es la alternativa más clara y eficiente.
+
+### Valores truthy y falsy
+
+En Python, todo valor tiene un sentido booleano implícito. Algunos valores se consideran **falsy** (equivalen a `False`) y el resto son **truthy** (equivalen a `True`).
+
+Valores **falsy**:
+- `False`
+- `0` y `0.0`
+- `""` (string vacío)
+- `None`
+
+```python
+print(bool(0))      # False
+print(bool(""))     # False
+print(bool(5))      # True
+print(bool("Hola")) # True
+```
+
+---
+
+## 13. Operadores lógicos
+
+Permiten combinar múltiples condiciones para crear lógica de decisión más compleja.
+
+### `and`
+
+Devuelve `True` solo si **ambas** condiciones son verdaderas.
+
+```python
+edad = 20
+es_estudiante = True
+
+if edad >= 18 and es_estudiante:
+    print("Accede al descuento universitario")
+```
+
+### `or`
+
+Devuelve `True` si **al menos una** condición es verdadera.
+
+```python
+edad = 15
+es_estudiante = True
+
+if edad < 18 or es_estudiante:
+    print("Accede al descuento")
+```
+
+### `not`
+
+Invierte el valor booleano de una condición.
+
+```python
+es_admin = False
+
+if not es_admin:
+    print("Acceso denegado")
+```
+
+### Tabla de verdad
+
+| `a` | `b` | `a and b` | `a or b` | `not a` |
+|---|---|---|---|---|
+| `True` | `True` | `True` | `True` | `False` |
+| `True` | `False` | `False` | `True` | `False` |
+| `False` | `True` | `False` | `True` | `True` |
+| `False` | `False` | `False` | `False` | `True` |
+
+---
+
+## 14. Recursos adicionales
+
+Para profundizar más en Python y continuar practicando, se recomienda el curso gratuito de Python de **freeCodeCamp**:
+
+- 🐍 **Curso de Python (freeCodeCamp):** https://www.freecodecamp.org/learn/scientific-computing-with-python/
+- 🌐 **freeCodeCamp (más cursos gratuitos):** https://www.freecodecamp.org/
+
+freeCodeCamp ofrece cursos completamente gratuitos y en línea sobre programación, desarrollo web, ciencia de datos y mucho más, con certificaciones incluidas.
+
+---
+
+> Elaborado como material de repaso para el curso de Introducción a la Programación · Universidad de Lima · Ciclo 2026-2
