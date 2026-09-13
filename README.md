@@ -100,11 +100,11 @@ Las estructuras selectivas también se representan en pseudocódigo:
 INICIO
     LEER celsius
     SI celsius <= 17:
-        Mostrar "Es un día frío"
+        MOSTRAR "Es un día frío"
     SINO SI celsius <= 25:
-        Mostrar "Es un día caluroso"
+        MOSTRAR "Es un día caluroso"
     SINO:
-        Mostrar "Está quemando"
+        MOSTRAR "Está quemando"
 FIN
 ```
 
