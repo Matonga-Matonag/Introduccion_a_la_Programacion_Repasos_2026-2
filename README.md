@@ -84,12 +84,12 @@ Un **algoritmo** es una secuencia de instrucciones que representan la solución 
 * **Salida:** M (precio en soles de una manzana)
 
 ```
-Inicio
-    Ingresar valor de K y P
-    Calcular G = K / 1000       (precio por gramo)
-    Calcular M = G x P          (precio de la manzana)
-    Mostrar el valor de M
-Fin
+INICIO
+    INGRESAR valor de K y P
+    CALCULAR G = K / 1000       (precio por gramo)
+    CALCULAR M = G x P          (precio de la manzana)
+    MOSTRAR el valor de M
+FIN
 ```
 
 ### Pseudocódigo con condicionales
@@ -97,7 +97,7 @@ Fin
 Las estructuras selectivas también se representan en pseudocódigo:
 
 ```
-Inicio
+INICIO
     LEER celsius
     SI celsius <= 17:
         Mostrar "Es un día frío"
@@ -105,7 +105,7 @@ Inicio
         Mostrar "Es un día caluroso"
     SINO:
         Mostrar "Está quemando"
-Fin
+FIN
 ```
 
 ---
