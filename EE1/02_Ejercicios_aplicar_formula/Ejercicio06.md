@@ -104,7 +104,7 @@ Costo por kilómetro:    S/. 0.544
 No tiene sentido tener 4.5 pasajeros. Usar `int` refleja correctamente la naturaleza del dato.
 
 **¿Podría haber un error si el usuario ingresa `0` pasajeros o `0` de rendimiento?**
-Sí: en ambos casos se produciría una división entre cero. Ese tipo de validación se resuelve con condicionales, que es el tema de la Pregunta 3.
+Sí: en ambos casos se produciría una división entre cero. Ese tipo de validación se resuelve con condicionales, que es el tema del tercer grupo de ejercicios.
 
 **¿Por qué se calcula `litros` antes que `costo_total`?**
 Porque `costo_total` depende de `litros`. Si se intentara calcular `costo_total` primero, Python daría un error porque `litros` aún no existiría como variable.
