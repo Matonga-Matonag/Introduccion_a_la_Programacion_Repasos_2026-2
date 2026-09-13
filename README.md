@@ -2,7 +2,7 @@
 
 ## ¡Bienvenidos al repositorio de repaso para Introducción a la Programación!
 
-> Hola, soy Matías, el Asistente de Cátedra (ayudante del profe) del curso. Les preparé este repositorio de repaso para el curso. A lo largo del ciclo lo iré actualizando conforme vayan avanzando las semanas, aprendan nuevos temas y se acerquen los exámenes, de modo que puedan estudiar tanto la teoría como la práctica. Espero que les sirva mucho y que den todo de sí mismo durante todo el ciclo. ¡Éxitos! 🔥🚀
+Hola, soy Matías, el Asistente de Cátedra (ayudante del profe) del curso. Les preparé este repositorio de repaso para el curso. A lo largo del ciclo lo iré actualizando conforme vayan avanzando las semanas, aprendan nuevos temas y se acerquen los exámenes, de modo que puedan estudiar tanto la teoría como la práctica. Espero que les sirva mucho y que den todo de sí mismo durante todo el ciclo. ¡Éxitos! 🔥🚀
 
 ## Objetivo del repositorio
 
