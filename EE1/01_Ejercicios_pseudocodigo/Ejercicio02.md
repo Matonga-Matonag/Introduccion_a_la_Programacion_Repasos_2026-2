@@ -40,20 +40,20 @@ El orden correcto es:
 ### Paso 3 — Escribir el pseudocódigo
 
 ```
-Inicio
-    Leer ingresos
-    Leer deuda
-    Leer antiguedad
+INICIO
+    LEER ingresos
+    LEER deuda
+    LEER antiguedad
 
-    Si ingresos > 5000 y deuda < 2000 y antiguedad >= 2:
-        Mostrar "Riesgo: BAJO"
-    Si no, si ingresos > 3000 y deuda < 5000 y antiguedad >= 1:
-        Mostrar "Riesgo: MEDIO"
-    Si no, si ingresos <= 1000 o deuda >= 10000:
-        Mostrar "Riesgo: MUY ALTO"
-    Si no:
-        Mostrar "Riesgo: ALTO"
-Fin
+    SI ingresos > 5000 y deuda < 2000 y antiguedad >= 2:
+        MOSTRAR "Riesgo: BAJO"
+    SINO SI ingresos > 3000 y deuda < 5000 y antiguedad >= 1:
+        MOSTRAR "Riesgo: MEDIO"
+    SINO SI ingresos <= 1000 o deuda >= 10000:
+        MOSTRAR "Riesgo: MUY ALTO"
+    SINO:
+        MOSTRAR "Riesgo: ALTO"
+FIN
 ```
 
 ### Paso 4 — Verificar con ejemplos
@@ -81,11 +81,11 @@ Fin
 ¿Qué pasaría si intercambiáramos `BAJO` y `MEDIO`? Con el ejemplo 1 (`ingresos = 6000`, `deuda = 1500`, `antiguedad = 3`):
 - ¿Cumple `MEDIO`? `6000 > 3000 y 1500 < 5000 y 3 >= 1` → **Sí** → clasificaría como `MEDIO` ❌
 
-Un cliente que debería ser `BAJO` quedaría mal clasificado. Por eso el orden de los `Si no, si` importa.
+Un cliente que debería ser `BAJO` quedaría mal clasificado. Por eso el orden de los `SINO SI` importa.
 
 ---
 
 > 💡 **Puntos clave de este ejercicio:**
 > - Uso de `y` (`and`) para combinar múltiples condiciones en una misma rama.
 > - Uso de `o` (`or`) para detectar cualquiera de dos situaciones de alarma.
-> - El orden de evaluación en una cadena `Si / Si no, si / Si no` es determinante para la corrección del algoritmo.
+> - El orden de evaluación en una cadena `SI / SINO SI / SINO` es determinante para la corrección del algoritmo.
