@@ -88,8 +88,8 @@ main()
 
 **Ejemplo 1: año 2024**
 - `2024 % 4 == 0` ✅ y `2024 % 100 != 0` ✅ → **bisiesto**
-- `2024 % 100 == 0`? No → no es de siglo
-- `2024 % 1000 == 0`? No → no es de milenio
+- `2024 % 100 == 0`? No → **no es de siglo**
+- `2024 % 1000 == 0`? No → **no es de milenio**
 
 Salida:
 ```
@@ -103,7 +103,7 @@ Salida:
 - `1900 % 4 == 0` ✅ pero `1900 % 100 != 0`? No (`1900 % 100 == 0`) ❌
 - `1900 % 400 == 0`? No → **no es bisiesto**
 - `1900 % 100 == 0` ✅ → **es de siglo**
-- `1900 % 1000 == 0`? No → no es de milenio
+- `1900 % 1000 == 0`? No → **no es de milenio**
 
 Salida:
 ```
