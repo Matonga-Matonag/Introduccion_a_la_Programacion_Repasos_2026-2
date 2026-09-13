@@ -14,7 +14,7 @@ Este repositorio tiene como propósito:
 
 ## Recursos adicionales
 
-Para profundizar más en Python y continuar practicando por su cuenta, les recomiendo el curso gratuito de Python de **freeCodeCamp**. Yo lo llevé antes de llevar Introducción a la Programación (y por si acaso veinteé 😉). Les servirá para profundizar más allá de lo que verán en el curso de la universidad, además de que al completarlo tendrán una certificación gratuita. Por si gustan tomarlo, les dejaré a continuación los links tanto al curso como a la plataforma de **freeCodeCamp**, donde podrán aprender muchas cosas más sobre programación y desarrollo de software:
+Para profundizar más en Python y continuar practicando por su cuenta, les recomiendo el curso gratuito de Python de **freeCodeCamp**. Yo lo llevé antes de llevar Introducción a la Programación (y me ayudó muchísimo). Les servirá para profundizar más allá de lo que verán en el curso de la universidad, además de que al completarlo tendrán una certificación gratuita. Por si gustan tomarlo, les dejaré a continuación los links tanto al curso como a la plataforma de **freeCodeCamp**, donde podrán aprender muchas cosas más sobre programación y desarrollo de software:
 
 - 🐍 **Curso de Python (freeCodeCamp):** https://www.freecodecamp.org/learn/scientific-computing-with-python/
 - 🌐 **freeCodeCamp (más cursos gratuitos):** https://www.freecodecamp.org/
