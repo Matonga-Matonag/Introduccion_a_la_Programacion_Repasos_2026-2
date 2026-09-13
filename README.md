@@ -21,4 +21,6 @@ Para profundizar más en Python y continuar practicando por su cuenta, les recom
 
 **freeCodeCamp** ofrece cursos completamente gratuitos y en línea sobre programación, desarrollo web, ciencia de datos y mucho más, con certificaciones incluidas.
 
+---
+
 > Elaborado como material de repaso y estudio para el curso de Introducción a la Programación · Matías Gonzalo Villar Córdova Alva
