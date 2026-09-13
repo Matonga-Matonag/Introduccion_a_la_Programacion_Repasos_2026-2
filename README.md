@@ -14,10 +14,10 @@
 6. [La función `print()`](#6-la-función-print)
 7. [La función `input()`](#7-la-función-input)
 8. [Operaciones con números](#8-operaciones-con-números)
-9. [Operadores de comparación](#11-operadores-de-comparación)
-10. [Estructuras selectivas](#12-estructuras-selectivas)
-11. [Operadores lógicos](#13-operadores-lógicos)
-12. [Recursos adicionales](#14-recursos-adicionales)
+9. [Operadores de comparación](#9-operadores-de-comparación)
+10. [Estructuras selectivas](#10-estructuras-selectivas)
+11. [Operadores lógicos](#11-operadores-lógicos)
+12. [Recursos adicionales](#12-recursos-adicionales)
 
 ---
 
