@@ -1,6 +1,6 @@
 # Repaso EE1 - Introducción a la Programación
 
-Esta sección está enfocada en su estudio para el Examen Escrito 1 (EE1). A continuación, podrán repasar la teoría correspondiente, y presionando sobre los archivos del tipo `##_Ejercicios_[tipo_de_ejercio].md` podrán prácticar distintos ejercicios relacionados a su examen. Estos ejercicios contienen el enunciado y luego la resolución, pero intenten hacelos por su cuenta antes de ver la solución. Espero que les sirva mucho. ¡Éxitos! 🦾🤖
+Esta sección está enfocada en su estudio para el Examen Escrito 1 (EE1). A continuación, podrán repasar la teoría correspondiente y, presionando sobre los archivos del tipo `##_Ejercicios_[tipo_de_ejercio].md`, podrán prácticar distintos ejercicios relacionados a su examen. Estos ejercicios contienen el enunciado y luego la resolución, pero intenten hacelos por su cuenta antes de ver la solución. Espero que les sirva mucho. ¡Éxitos! 🦾🤖
 
 ---
 
