@@ -39,7 +39,7 @@ for i in range(5):
 
 En Python existen dos tipos de bucle:
 - `while`: repite **mientras** una condición sea verdadera. Se usa cuando no se sabe de antemano cuántas veces se va a repetir.
-- `for`: repite una cantidad **fija y conocida** de veces. En este curso se usa siempre con `range()`.
+- `for`: repite una cantidad **fija y conocida** de veces.
 
 ---
 
