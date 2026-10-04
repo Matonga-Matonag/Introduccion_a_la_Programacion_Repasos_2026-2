@@ -1,4 +1,4 @@
-# Pregunta 4 — Ejercicio 1: Primer múltiplo que supera 50
+# Ejercicio 10: Primer múltiplo que supera 50
 
 ## Enunciado
 
