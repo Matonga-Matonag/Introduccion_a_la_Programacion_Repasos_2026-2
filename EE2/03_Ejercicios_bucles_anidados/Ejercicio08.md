@@ -1,4 +1,4 @@
-# Pregunta 3 — Ejercicio 2: Triángulo con símbolos alternados
+# Ejercicio 8: Triángulo con símbolos alternados
 
 ## Enunciado
 
