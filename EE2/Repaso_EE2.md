@@ -260,20 +260,6 @@ def main():
 main()
 ```
 
-### Ejemplo: sumar números hasta superar 100
-
-```python
-def main():
-    suma = 0
-    n = int(input("Ingrese un número: "))
-    while suma <= 100:
-        suma = suma + n
-        n = int(input("Ingrese otro número: "))
-    print("La suma superó 100. Total:", suma)
-
-main()
-```
-
 ### Ejemplo: menú con validación
 
 Un patrón muy común es mostrar un menú en bucle y salir solo cuando el usuario elige la opción correcta:
