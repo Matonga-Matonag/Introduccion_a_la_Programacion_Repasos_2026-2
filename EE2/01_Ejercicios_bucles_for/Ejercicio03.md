@@ -1,4 +1,4 @@
-# Pregunta 1 — Ejercicio 3: Clasificador de números ingresados
+# Ejercicio 3: Clasificador de números ingresados
 
 ## Enunciado
 
