@@ -1,4 +1,4 @@
-# Pregunta 3 — Ejercicio 1: Tablas de multiplicar filtradas
+# Ejercicio 7: Tablas de multiplicar filtradas
 
 ## Enunciado
 
