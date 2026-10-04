@@ -1,6 +1,6 @@
 # Repaso: Estructuras Repetitivas y Bucles Anidados
 
-> Material de repaso para el segundo examen del curso. Basado en los contenidos vistos en clase durante las semanas 5 y 6.
+Esta sección está enfocada en su estudio para el Examen Escrito 2 (EE2). A continuación, podrán repasar la teoría correspondiente y, presionando sobre los archivos del tipo ##_Ejercicios_[tipo_de_ejercio].md, podrán prácticar distintos ejercicios relacionados a su examen. Estos ejercicios contienen el enunciado y luego la resolución, pero intenten hacelos por su cuenta antes de ver la solución. Espero que les sirva mucho. ¡Éxitos! 🦾🤖
 
 ---
 
