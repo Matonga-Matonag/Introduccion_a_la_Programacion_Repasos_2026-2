@@ -421,4 +421,4 @@ main()
 
 ---
 
-> Elaborado como material de repaso para el curso de Introducción a la Programación · Universidad de Lima · Ciclo 2026-2
+> Muchos éxitos a todos y todas en su examen. ¡Confién en ustedes! 🦾
