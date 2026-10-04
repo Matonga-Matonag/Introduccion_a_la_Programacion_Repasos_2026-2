@@ -1,4 +1,4 @@
-# Pregunta 4 — Ejercicio 2: Registro de notas con validación
+# Ejercicio 11: Registro de notas con validación
 
 ## Enunciado
 
