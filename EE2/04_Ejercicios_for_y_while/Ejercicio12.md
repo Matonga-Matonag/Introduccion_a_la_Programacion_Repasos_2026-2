@@ -1,4 +1,4 @@
-# Pregunta 4 — Ejercicio 3: Detector de números primos
+# Ejercicio 12: Detector de números primos
 
 ## Enunciado
 
