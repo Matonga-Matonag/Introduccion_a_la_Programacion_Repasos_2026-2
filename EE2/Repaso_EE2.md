@@ -14,7 +14,6 @@ Esta sección está enfocada en su estudio para el Examen Escrito 2 (EE2). A con
 6. [Condicionales dentro de bucles](#6-condicionales-dentro-de-bucles)
 7. [Bucles dentro de condicionales](#7-bucles-dentro-de-condicionales)
 8. [Bucles anidados](#8-bucles-anidados)
-9. [Análisis de bucles](#9-análisis-de-bucles)
 
 ---
 
@@ -419,49 +418,6 @@ main()
 ```
 
 > ⚠️ En los bucles `while` anidados hay que inicializar y actualizar **ambos** contadores. Un error frecuente es olvidar reinicializar la variable del bucle interno (`j = 1` antes del `while` interno), lo que puede causar que el bucle interno no se ejecute en las iteraciones siguientes del externo.
-
----
-
-## 9. Análisis de bucles
-
-El número de veces que se ejecuta un bucle tiene un impacto directo en el tiempo que tarda un programa. Esto se conoce como **análisis de complejidad**.
-
-### Bucle simple
-
-Un bucle simple que recorre `n` elementos ejecuta sus instrucciones internas **n veces**. Su complejidad es **O(n)** (lineal): si los datos se duplican, el tiempo también se duplica aproximadamente.
-
-```python
-for i in range(n):
-    pass   # se ejecuta n veces
-```
-
-### Bucle anidado
-
-En un doble bucle anidado donde ambos recorren `n` elementos, las instrucciones del interior se ejecutan **n × n = n²** veces. Su complejidad es **O(n²)** (cuadrática).
-
-```python
-for i in range(n):
-    for j in range(n):
-        pass   # se ejecuta n² veces
-```
-
-> ⚠️ La diferencia entre O(n) y O(n²) se vuelve crítica con datos grandes. Con n = 1000, un bucle simple ejecuta 1 000 instrucciones; un doble bucle ejecuta 1 000 000.
-
-### Mejor caso y peor caso
-
-Cuando un bucle puede terminar antes dependiendo de una condición (por ejemplo, encontrar un valor buscado), se distinguen dos escenarios:
-
-- **Mejor caso:** el elemento se encuentra en la primera posición → el bucle se ejecuta 1 vez.
-- **Peor caso:** el elemento está en la última posición o no existe → el bucle se ejecuta `n` veces.
-
-```python
-# Búsqueda de un dígito: puede terminar antes con break
-for i in range(1, n + 1):
-    digito_actual = (num // 10 ** (n - i)) % 10
-    if digito_actual == digito_buscar:
-        pos = i
-        break
-```
 
 ---
 
