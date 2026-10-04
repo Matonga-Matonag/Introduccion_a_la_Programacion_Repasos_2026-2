@@ -1,4 +1,4 @@
-# Pregunta 2 — Ejercicio 3: Suscripción a servicio de streaming
+# Ejercicio 6: Suscripción a servicio de streaming
 
 ## Enunciado
 
