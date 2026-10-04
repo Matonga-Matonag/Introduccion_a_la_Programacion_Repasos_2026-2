@@ -1,4 +1,4 @@
-# Pregunta 3 — Ejercicio 3: Tablas de multiplicar con suma y ranking
+# Ejercicio 9: Tablas de multiplicar con suma y ranking
 
 ## Enunciado
 
