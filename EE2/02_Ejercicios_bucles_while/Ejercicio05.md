@@ -1,4 +1,4 @@
-# Pregunta 2 — Ejercicio 2: Simulador de caja registradora
+# Ejercicio 5: Simulador de caja registradora
 
 ## Enunciado
 
