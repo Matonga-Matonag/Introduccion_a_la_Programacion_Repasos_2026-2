@@ -1,4 +1,4 @@
-# Pregunta 2 — Ejercicio 1: Adivina el número secreto
+# Ejercicio 4: Adivina el número secreto
 
 ## Enunciado
 
