@@ -1,4 +1,4 @@
-# Pregunta 1 — Ejercicio 2: Crecimiento de capital mes a mes
+# Ejercicio 2: Crecimiento de capital mes a mes
 
 ## Enunciado
 
