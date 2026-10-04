@@ -1,4 +1,4 @@
-# Pregunta 1 — Ejercicio 1: Factorial de un número
+# Ejercicio 1: Factorial de un número
 
 ## Enunciado
 
