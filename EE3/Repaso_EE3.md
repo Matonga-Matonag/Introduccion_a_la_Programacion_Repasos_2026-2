@@ -213,9 +213,9 @@ Cuando el resultado tiene muchos decimales, puede redondearse con `round(valor, 
 
 ```python
 def precio_con_igv(precio):
-    return round(precio * 1.18, 2)
+    return round(precio * 1.1857, 2)
 
-print(precio_con_igv(90))   # 106.2
+print(precio_con_igv(90))   # 106.71 y no 106.713
 ```
 
 ---
