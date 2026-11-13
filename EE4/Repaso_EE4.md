@@ -330,14 +330,11 @@ while i < len(frutas):
     i = i + 1
 ```
 
-```
-
 | Necesito... | Uso |
 |---|---|
 | La posición | `for i in range(len(lista))` |
 | Solo los valores | `for x in lista` |
 | Detenerme al encontrar algo | `while` |
-| Posición y valor | `for i, x in enumerate(lista)` |
 
 ---
 
