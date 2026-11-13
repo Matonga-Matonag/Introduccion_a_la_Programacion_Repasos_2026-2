@@ -21,8 +21,8 @@
 13. [Alias y copias](#13-alias-y-copias)
 14. [Slicing](#14-slicing)
 15. [Cadenas como secuencias](#15-cadenas-como-secuencias)
-16. [Listas dentro de funciones](#17-listas-dentro-de-funciones)
-17. [Errores frecuentes](#18-errores-frecuentes)
+16. [Listas dentro de funciones](#16-listas-dentro-de-funciones)
+17. [Errores frecuentes](#17-errores-frecuentes)
 
 ---
 
