@@ -443,20 +443,10 @@ else:
 
 > ⚠️ El orden de las condiciones importa: `contador < len(nombres)` debe ir **primero**. Si se invirtiera, `nombres[contador]` podría intentar acceder a una posición que no existe.
 
-### Atajos: `in` e `index`
+### Uso de `in`
 
 ```python
 "Jill" in nombres          # True   → ¿está?
-nombres.index("Jill")      # 4      → posición de la primera aparición
-```
-
-`index` produce un error si el elemento no existe. Para evitarlo, se usa `in` antes:
-
-```python
-if "Pedro" in nombres:
-    print(nombres.index("Pedro"))
-else:
-    print("No está")
 ```
 
 ---
