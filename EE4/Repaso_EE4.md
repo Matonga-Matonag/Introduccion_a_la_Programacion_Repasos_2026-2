@@ -21,9 +21,8 @@
 13. [Alias y copias](#13-alias-y-copias)
 14. [Slicing](#14-slicing)
 15. [Cadenas como secuencias](#15-cadenas-como-secuencias)
-16. [Listas multidimensionales (matrices)](#16-listas-multidimensionales-matrices)
-17. [Listas dentro de funciones](#17-listas-dentro-de-funciones)
-18. [Errores frecuentes](#18-errores-frecuentes)
+16. [Listas dentro de funciones](#17-listas-dentro-de-funciones)
+17. [Errores frecuentes](#18-errores-frecuentes)
 
 ---
 
@@ -553,39 +552,7 @@ Atajo con slicing: `cadena[::-1]` → `"CBA"`.
 
 ---
 
-## 16. Listas multidimensionales (matrices)
-
-Una lista de listas representa una tabla: el **primer índice es la fila** y el **segundo es la columna**.
-
-```python
-a = [[1, 2, 3],
-     [4, 5, 6],
-     [7, 8, 9]]     # matriz 3x3
-
-print(a[1][2])      # 6  → fila 1, columna 2
-```
-
-Recorrido completo con bucles anidados:
-
-```python
-for i in range(len(a)):            # filas
-    for j in range(len(a[i])):     # columnas
-        print(a[i][j], end=" ")
-    print()
-```
-
-Salida:
-```
-1 2 3
-4 5 6
-7 8 9
-```
-
-> 💡 ¡Ambos índices empiezan en 0! `a[1][2]` no es la segunda fila, tercera columna en sentido humano, sino la fila con índice 1 y la columna con índice 2.
-
----
-
-## 17. Listas dentro de funciones
+## 16. Listas dentro de funciones
 
 Una lista puede enviarse a una función. Según lo que haga, la función **modifica** la lista original o **devuelve** una nueva.
 
@@ -695,7 +662,7 @@ print(eliminar_duplicados([1, 2, 2, 3, 1]))   # [1, 2, 3]
 
 ---
 
-## 18. Errores frecuentes
+## 17. Errores frecuentes
 
 Antes de entregar tu examen, revisa estos puntos:
 
