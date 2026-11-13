@@ -330,13 +330,6 @@ while i < len(frutas):
     i = i + 1
 ```
 
-### Con `enumerate`
-
-Cuando se necesitan **posición y valor a la vez**:
-
-```python
-for i, fruta in enumerate(frutas):
-    print(i, fruta)
 ```
 
 | Necesito... | Uso |
